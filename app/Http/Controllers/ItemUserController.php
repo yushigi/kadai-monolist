@@ -69,6 +69,8 @@ class ItemUserController extends Controller
    
             'image_url' => str_replace('?_ex=128x128', '', $rws_item['mediumImageUrls'][0]['imageUrl']),
         ]);
+        //var_dump($item);
+        //exit;
 
         \Auth::user()->have($item->id);
 

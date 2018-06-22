@@ -84,7 +84,7 @@ class User extends Authenticatable
     
     public function have($itemID)
     {
-        $exist = $this->is_wanting($itemID);
+        $exist = $this->is_having($itemID);
         
         if($exist) {
             return false;
